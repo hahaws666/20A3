@@ -1,0 +1,35 @@
+{% extends "dona.html" %}
+{% block content %}
+    <body  class="from1">
+     <form action="" method="post" class="form1" >
+             <h2>Donating for ukraine</h2>
+             Thank for your support
+             <h3>information</h3>
+               <div class ="r">
+                   family name <input type="text" ><br/>
+                  given name <input type="text" ><br/>
+                 E.mail<input type="text" ><br/>
+                   Amount<input type="text"><br/>
+
+               </div>
+             <h3>paying information</h3>
+             <div class="c">
+             card:
+                 <select>
+                     <option selected="selected">Visa</option>
+                     <option>mastercard</option>
+                 </select><br/>
+             </div>
+             <div class="r">
+                 card number<input type="text" ><br/>
+                 cvv number<input type="password" ><br/>
+                 valid date<input type="text" ><br/>
+             </div>
+             <em>mm/yyyy</em><br/>
+             <div class="c">
+                <input type="submit" value="ready to pay" />
+             </div>
+     </form>
+     </form>
+</body>
+{% endblock %}
