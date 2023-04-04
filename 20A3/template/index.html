@@ -1,110 +1,10 @@
 
-<!doctype html>
-
-
-     <head>
-        <!-- META TAGS -->
-        <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="ukraine donation">
-
-        <title>Welcome To donation site </title>
-
-        <!-- FAVICON -->
-        <link rel="shortcut icon" href="icon.jpg" />
-
-
-        <!-- Google Web Fonts-->
-
-
-        <!-- Style Sheet-->
-        <link rel="stylesheet" href="style.css"/>
-        <link rel='stylesheet' href='../static/main.css' type='text/css' media='all' />
-
-
-
-
- <script>
-
-
-</script>
-    </head>
-    <body>
-        <!-- Start wrap -->
-        <div id="page-content-wrap">
-
-            <!-- Start Header -->
-            <div id="header-wrapper">
-
-                <header id="header">
-
-
-
-                    <!--Left Menu -->
-                    <nav class="main-menu left clearfix">
-                        <div class="menu-left-main-menu-container">
-                            <ul id="menu-left-main-menu" class="clearfix">
-                                <li class="menu-item"><a href="index.html"> About Us</a></li>
-
-
-
-                            </ul>
-                        </div>
-                    </nav>
-
-                    <!-- Header Logo -->
-                    <div id="logo">
-                        <!-- Website Logo -->
-                        <a href="index.html"  title="Fratelli Village Pizzeria">
-                        	<img src="" alt="ukr ">
-                        </a>
-                    </div>
-
-                    <!-- Right Menu -->
-                    <nav class="main-menu right clearfix">
-                        <div class="menu-right-main-menu-container">
-                            <ul id="menu-right-main-menu" class="clearfix">
-
-
-
-                                <li class="menu-item"><a href="gallery.html"> photos in ukraine</a></li>
-                            <li class="menu-item"><a href="contact.html">Contact Hours</a></li>
-                           </ul>
-                        </div>
-                    </nav>
-
-                </header>
-
-            </div><!-- End Header -->
-			<!-- Slider-->
-            <div class="slider-wrapper">
-
-                <div class="flexslider">
-
-                    <ul class="slides">
-                         <li><a href="#"><img src="img-demo/health_happiness.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="img-demo/slider5.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="img-demo/slider4.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="img-demo/slider7.jpg" alt=""></a></li>
-                    </ul>
-
-                </div>
-
-            </div>
             <!--End Slider-->
 
-            <!-- Bottom Strip -->
-            <div class="bottom-strip-wrapper">
-                <div class="bottom-strip">
-                    <p>
-                    	<span>last donation:{{last}}  </span>
-                        <span> total donation: {{money}} </span>
-                        <span> total visit:{{count}}</span>
-                    </p>
-                </div>
-            </div>
 
             <!-- Start Container -->
+            {% extends 'head.html'  %}
+            {%  block content %}
             <div id="container">
 
                 <!-- Content -->
@@ -116,14 +16,17 @@
 
                         <section class="page-head">
                             <h1>
-                                <span>Hello all people who are visiting this site!</span>
+                                <span>Donate to Ukraine Emergency Relief Efforts</span>
                             </h1>
                         </section>
-                      <p>The ongoing conflict in Ukraine is rooted in the annexation of Crimea by Russia in 2014, which was followed by pro-Russian separatist movements in eastern Ukraine. Since then, sporadic fighting and political instability have continued to cause widespread suffering for the people of Ukraine. The conflict has resulted in the displacement of over 1.5 million people, and thousands have lost their lives.
 
-Despite international efforts to mediate a ceasefire and find a diplomatic solution, the conflict has not yet been fully resolved. The situation remains tense, with occasional flare-ups of violence occurring in the region. The war has also had a significant economic impact on the country, exacerbating existing social and economic inequalities.
 
-The ongoing conflict in Ukraine is a reminder of the devastating impact that war and political instability can have on the lives of ordinary people. It is essential that the international community continues to support efforts to find a peaceful resolution to the conflict and provide humanitarian aid to those impacted by the crisis. It is also crucial to hold those responsible for the violence and violations of human rights accountable for their actions.</p>
+                        <!--来一组滚动的捐款照片-->
+                      <p>This February marks the one year anniversary of the war in Ukraine, and your help is still needed more than ever. With no end in sight, the people of Ukraine continue to face ongoing food and water shortages, risk of physical injury, lack of medical care, and safe shelter.
+
+Donate to help Canadian charities provide urgent aid to those impacted by the war, including Ukrainian refugees who fled their homes with few resources. You can provide medical aid, protect children’s welfare, supply safe drinking water, food, and shelter, support millions of refugees, and provide other life-saving support.
+
+Charities are struggling with declining donations to support relief efforts in Ukraine – an 80% decrease compared to the first six months of the war. Your donations can help charities provide critical aid needed to survive this humanitarian crisis.</p>
 
 						  <p>Looking forward to receiving your fund </p>
 					<p>let's pray for the ukranie</p>
@@ -139,19 +42,6 @@ The ongoing conflict in Ukraine is a reminder of the devastating impact that war
 
                         <section id="template-items">
                             <ul class="template-items clearfix">
-
-                                <li>
-                                    <h2>About donating team</h2>
-                                    <figure>
-                                        <a href="our-menu.html"> <img src="images/family1.jpg" alt=""></a>
-                                    </figure>
-                                    <h3>student with warm hearts</h3>
-                                    <p> our donating team is made up of students of utsc, majorly studying in compuster science. after hearing the  news of the war in ukranie. we are shocked about it and decided to make some contribution to ukraine with our ability</p>
-                                    <figure>
-                                        <a href="gallery.html"> <img src="images/dad1.jpg" alt=""></a>
-                                    </figure>
-                                    <p> the fund we raised will be majorly used in rebuilding the basic equipment of ukraine, rebuilding the education and medical system in the war zone </p>
-                              </li>
 
                                 <li>
                                     <h2>why donating</h2>
@@ -176,8 +66,7 @@ The ongoing conflict in Ukraine is a reminder of the devastating impact that war
                                </li>
                                <li>
 
-                                  <iframe
-  width="233" height="193" src="https://www.google.com/maps/place/Students+Union" allowfullscreen></iframe>
+                                  <iframe width="233" height="193" src="https://www.google.com/maps/place/Students+Union" allowfullscreen></iframe>
                                 </li>
 
 
@@ -189,39 +78,8 @@ The ongoing conflict in Ukraine is a reminder of the devastating impact that war
 
 
                     </div><!-- End of Main Content-->
+                </div>
+            </div>
+                </div>
 
-                    <div class="container-bottom"></div>
-
-                </div><!-- End Content-->
-
-            </div><!-- End Container -->
-
-            <!-- Start Footer -->
-            <div id="footer-wrapper">
-                <footer id="footer">
-
-                    <!-- Footer Menu -->
-                    <nav id="footer-menu">
-                        <ul id="menu-footer-menu" class="clearfix">
-                            <li class="menu-item"><a href="index.html">Home</a></li>
-                            <li class="menu-item"><a href="our-menu.html">Menu</a></li>
-                            <li class="menu-item"><a href="gallery.html">Images</a></li>
-                            <li class="menu-item"><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <p class="copyright">Copyright © 2023 donating fund team. All rights reserved. </p>
-                    <button type="button" href="admin.html"> admin</button>
-
-
-              </footer>
-            </div><!-- End Footer -->
-
-        </div><!-- End Page wrap -->
-
-        <a href="#top" id="scroll-top"></a>
-
-
-    </body>
-</html>
-
-
+            {% endblock %}
